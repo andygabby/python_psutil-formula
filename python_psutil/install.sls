@@ -6,3 +6,7 @@
 python_psutil-pkg:
   pkg.installed:
     - name: {{ python_psutil.pkg }}
+{% if grains['os_family'] == 'RedHat' %}
+    - fromrepo: 'epel'
+{% endif %}
+
