@@ -1,0 +1,3 @@
+python_psutil:
+  pkg: 'python-psutil'
+  repo: epel
